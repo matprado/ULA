@@ -1,0 +1,358 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus II License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(pin
+	(input)
+	(rect 48 120 216 136)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "E[3..0]" (rect 5 0 38 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(input)
+	(rect 56 280 224 296)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "C[2..0]" (rect 5 0 39 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
+	(output)
+	(rect 688 896 864 912)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "S[3]" (rect 90 0 110 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 688 656 864 672)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "S[2]" (rect 90 0 110 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 688 424 864 440)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "S[1]" (rect 90 0 110 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(pin
+	(output)
+	(rect 688 200 864 216)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "S[0]" (rect 90 0 110 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
+(symbol
+	(rect 496 160 608 248)
+	(text "MUX" (rect 42 0 73 16)(font "Arial" (font_size 10)))
+	(text "inst" (rect 3 77 23 91)(font "Arial" (font_size 8)))
+	(port
+		(pt 0 48)
+		(input)
+		(text "data[WIDTH-1..0]" (rect 6 35 101 49)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 6 35 37 49)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 44 48)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel[WIDTHS-1..0]" (rect 59 73 154 87)(font "Arial" (font_size 8)))
+		(text "sel[]" (rect 59 73 82 87)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result" (rect 74 33 105 47)(font "Arial" (font_size 8)))
+		(text "result" (rect 74 33 105 47)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48))
+	)
+	(parameter
+		"WIDTH"
+		"5"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"WIDTHS"
+		"CEIL(LOG2(WIDTH))"
+		"Width of sel[] port, default is CEIL(LOG2(WIDTH))"
+	)
+	(drawing
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 608 112 808 154))
+)
+(symbol
+	(rect 504 384 616 472)
+	(text "MUX" (rect 42 0 73 16)(font "Arial" (font_size 10)))
+	(text "inst1" (rect 3 77 26 89)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "data[WIDTH-1..0]" (rect 6 35 101 49)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 6 35 37 49)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 44 48)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel[WIDTHS-1..0]" (rect 59 73 154 87)(font "Arial" (font_size 8)))
+		(text "sel[]" (rect 59 73 82 87)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result" (rect 74 33 105 47)(font "Arial" (font_size 8)))
+		(text "result" (rect 74 33 105 47)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48))
+	)
+	(parameter
+		"WIDTH"
+		"5"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"WIDTHS"
+		"CEIL(LOG2(WIDTH))"
+		"Width of sel[] port, default is CEIL(LOG2(WIDTH))"
+	)
+	(drawing
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 616 336 816 378))
+)
+(symbol
+	(rect 496 616 608 704)
+	(text "MUX" (rect 42 0 73 16)(font "Arial" (font_size 10)))
+	(text "inst2" (rect 3 77 26 89)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "data[WIDTH-1..0]" (rect 6 35 101 49)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 6 35 37 49)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 44 48)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel[WIDTHS-1..0]" (rect 59 73 154 87)(font "Arial" (font_size 8)))
+		(text "sel[]" (rect 59 73 82 87)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result" (rect 74 33 105 47)(font "Arial" (font_size 8)))
+		(text "result" (rect 74 33 105 47)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48))
+	)
+	(parameter
+		"WIDTH"
+		"5"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"WIDTHS"
+		"CEIL(LOG2(WIDTH))"
+		"Width of sel[] port, default is CEIL(LOG2(WIDTH))"
+	)
+	(drawing
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 608 568 808 610))
+)
+(symbol
+	(rect 496 856 608 944)
+	(text "MUX" (rect 42 0 73 16)(font "Arial" (font_size 10)))
+	(text "inst3" (rect 3 77 26 89)(font "Arial" ))
+	(port
+		(pt 0 48)
+		(input)
+		(text "data[WIDTH-1..0]" (rect 6 35 101 49)(font "Arial" (font_size 8)))
+		(text "data[]" (rect 6 35 37 49)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 44 48)(line_width 3))
+	)
+	(port
+		(pt 56 88)
+		(input)
+		(text "sel[WIDTHS-1..0]" (rect 59 73 154 87)(font "Arial" (font_size 8)))
+		(text "sel[]" (rect 59 73 82 87)(font "Arial" (font_size 8)))
+		(line (pt 56 88)(pt 56 72)(line_width 3))
+	)
+	(port
+		(pt 112 48)
+		(output)
+		(text "result" (rect 74 33 105 47)(font "Arial" (font_size 8)))
+		(text "result" (rect 74 33 105 47)(font "Arial" (font_size 8)))
+		(line (pt 68 48)(pt 112 48))
+	)
+	(parameter
+		"WIDTH"
+		"5"
+		"Width of I/O, any integer > 0"
+		" 1" " 2" " 3" " 4" " 5" " 6" " 7" " 8" " 9" "10" "11" "12" "13" "14" "15" "16" "20" "24" "28" "32" "40" "48" "56" "64" 
+	)
+	(parameter
+		"WIDTHS"
+		"CEIL(LOG2(WIDTH))"
+		"Width of sel[] port, default is CEIL(LOG2(WIDTH))"
+	)
+	(drawing
+		(line (pt 68 64)(pt 68 32))
+		(line (pt 44 80)(pt 44 16))
+		(line (pt 44 16)(pt 68 32))
+		(line (pt 44 80)(pt 68 64))
+	)
+	(annotation_block (parameter)(rect 608 808 808 850))
+)
+(connector
+	(text "C[2..0]" (rect 536 241 548 275)(font "Arial" )(vertical))
+	(pt 552 248)
+	(pt 552 280)
+	(bus)
+)
+(connector
+	(text "C[2..0]" (rect 544 473 556 507)(font "Arial" )(vertical))
+	(pt 560 472)
+	(pt 560 512)
+	(bus)
+)
+(connector
+	(text "C[2..0]" (rect 536 705 548 739)(font "Arial" )(vertical))
+	(pt 552 704)
+	(pt 552 744)
+	(bus)
+)
+(connector
+	(text "C[2..0]" (rect 536 945 548 979)(font "Arial" )(vertical))
+	(pt 552 944)
+	(pt 552 984)
+	(bus)
+)
+(connector
+	(pt 616 432)
+	(pt 688 432)
+)
+(connector
+	(pt 608 664)
+	(pt 688 664)
+)
+(connector
+	(pt 608 904)
+	(pt 688 904)
+)
+(connector
+	(pt 608 208)
+	(pt 688 208)
+)
+(connector
+	(text "E[3],E[3],E[3],E[3],E[3]" (rect 242 888 356 900)(font "Arial" ))
+	(pt 496 904)
+	(pt 232 904)
+	(bus)
+)
+(connector
+	(text "E[3],E[3],E[2],E[1],E[0]" (rect 250 192 364 204)(font "Arial" ))
+	(pt 240 208)
+	(pt 496 208)
+	(bus)
+)
+(connector
+	(text "E[3],E[3],E[3],E[2],E[1]" (rect 258 416 372 428)(font "Arial" ))
+	(pt 248 432)
+	(pt 504 432)
+	(bus)
+)
+(connector
+	(text "E[3],E[3],E[3],E[3],E[2]" (rect 250 648 364 660)(font "Arial" ))
+	(pt 496 664)
+	(pt 240 664)
+	(bus)
+)
